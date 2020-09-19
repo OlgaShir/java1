@@ -19,6 +19,15 @@ public class Astronomy {
                 return s3;
             }
 
+            public static Double earthVsMercury(){
+                double p = earthSquare()/mercurySquare();
+                return p;
+            }
+
+            public static Double earthVsJupiter() {
+                double p1 = earthSquare() / jupiterSquare();
+                return p1;
+            }
                 public static void main(String[]args){
                     sphereSquare(6371.2);
                     sphereSquare(2439.7);
