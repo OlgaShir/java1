@@ -1,3 +1,5 @@
+package ru.progwards.java1.lessons.basics;
+
 class AccuracyDoubleFloat {
     public static double volumeBallDouble(double radius){
         double v = 4/3.0*3.14*(radius*radius*radius);
