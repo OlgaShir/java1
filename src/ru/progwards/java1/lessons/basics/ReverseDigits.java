@@ -7,11 +7,12 @@ public class ReverseDigits {
         number /= 10;
         int b = (number % 10) * 10;
         number /= 10;
+        System.out.println(a + b + number);
         return  a + b + number;
     }
 
     public static void main(String[] args){
-        reverseDigits(321);
+        reverseDigits(123);
     }
 }
 
