@@ -1,6 +1,6 @@
 package ru.progwards.java1.lessons.basics;
 
-public class Astronomy {
+class Astronomy {
 
             public static Double sphereSquare(Double r){
                 double s = 4.0 * 3.14 * (r * r);
@@ -15,7 +15,7 @@ public class Astronomy {
                 return s2;
             }
             public static Double jupiterSquare() {
-                double s3 = sphereSquare(2439.7);
+                double s3 = sphereSquare(71492.0);
                 return s3;
             }
 
@@ -29,9 +29,10 @@ public class Astronomy {
                 return p1;
             }
                 public static void main(String[]args){
-                    sphereSquare(6371.2);
-                    sphereSquare(2439.7);
-                    sphereSquare(71492.0);
+                    earthSquare();
+                    mercurySquare();
+                    jupiterSquare();
                     System.out.println(earthVsMercury());
+                    System.out.println(earthVsJupiter());
                 }
             }
