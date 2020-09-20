@@ -3,7 +3,7 @@ package ru.progwards.java1.lessons.basics;
 public class Astronomy {
 
             public static Double sphereSquare(Double r){
-                double s = 4.0 * Math.PI * (r * r);
+                double s = 4.0 * 3.14 * (r * r);
                 return s;
             }
             public static Double earthSquare() {
@@ -32,5 +32,6 @@ public class Astronomy {
                     sphereSquare(6371.2);
                     sphereSquare(2439.7);
                     sphereSquare(71492.0);
+                    System.out.println(earthVsMercury());
                 }
             }
