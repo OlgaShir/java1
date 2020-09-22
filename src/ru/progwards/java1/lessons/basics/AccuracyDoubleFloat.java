@@ -10,7 +10,7 @@ class AccuracyDoubleFloat {
         return v1;
     }
     public static double calculateAccuracy(double radius){
-        return volumeBallDouble ((float)radius) - volumeBallFloat((float) radius);
+        return volumeBallDouble((double) radius) - volumeBallFloat((float) radius);
     }
 
     public static void main(String[] args) {
