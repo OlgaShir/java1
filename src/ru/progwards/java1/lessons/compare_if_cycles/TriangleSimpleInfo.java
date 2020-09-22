@@ -19,9 +19,10 @@ class TriangleSimpleInfo {
     }
     public static boolean isEquilateralTriangle(int a, int b, int c){
         boolean result = (a==b && b==c);
+        System.out.println(result);
         return result;
     }
     public static void main(String[] args){
-        maxSide(1,2,3);
+        isEquilateralTriangle(1,2,3);
     }
 }
