@@ -21,8 +21,4 @@ class TriangleInfo {
         System.out.println(result1);
         return result1;
     }
-
-    public static void main(String[] args) {
-        isIsoscelesTriangle(3,3,5);
-    }
 }
