@@ -42,7 +42,7 @@ public class Animal {
     public class Cow extends Animal {
 
         @Override
-        public AnimalKind getKind() {
+        public static  AnimalKind getKind() {
             AnimalKind an2 = AnimalKind.COW;
             return an2;
         }
@@ -99,7 +99,7 @@ public class Animal {
         }
     }
 public double calculateFoodWeight() {
-        return Animal(double weight) * double getFoodCoeff();
+        return Animal(double weight) * getFoodCoeff();
 }
 public String toStringFull() {
         return "I am" + AnimalKind +", eat" + FoodKind + calculateFoodWeight();
