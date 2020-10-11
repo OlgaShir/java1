@@ -6,14 +6,26 @@ public class ComplexNum {
         this.b = b;
     }
     public String toString(){
+        if (b >= 0)
         return  a+"+"+b+"i";
+        else
+            return a+"-"+ -b+"i";
     }
-    public ComplexNum add(ComplexNum num){
+    public ComplexNum add(ComplexNum num) {
+        int c;
+        int d;
+        this.c = c;
+        this.d = d;
+    }
+
+        public String toString(){
+            return (a+c)+"+"+(b+d)+"i";
+
 
     }
 
     public static void main(String[] args) {
-        System.out.println();
+
     }
 }
 
