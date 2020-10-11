@@ -26,6 +26,7 @@ public class ComplexNum {
         ComplexNum Sum = new ComplexNum(AnsR, AnsI);
         return Sum;
     }
+    
 
     public ComplexNum mul(ComplexNum num) {
         int AnsI = (this.a * num.b) + (this.b * num.a);
