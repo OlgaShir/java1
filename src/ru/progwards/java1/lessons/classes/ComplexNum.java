@@ -35,17 +35,15 @@ public class ComplexNum {
     }
     public ComplexNum div(ComplexNum num)
     {
-        ComplexNum ComCon = new ComplexNum(num.a, (num.b * -1));
-        ComplexNum part1 = new ComplexNum(this.a, this.b).mul(ComCon);
-        ComplexNum part2 = num.mul(ComCon);
-
-        return part1;
+        int AnsR1 = (this.a * num.a + this.b * num.b) / (num.a * num.a + num.b * num.b);
+        int AnsI1 = (this.b * num.a - this.a * num.b) / (num.a * num.a + num.b * num.b);
+        return new ComplexNum (AnsR1, AnsI1);
     }
 
     public static void main(String[] args) {
 
         System.out.println();
-        sub()
+
     }
 }
 
