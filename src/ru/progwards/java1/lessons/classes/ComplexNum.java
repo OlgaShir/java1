@@ -20,13 +20,12 @@ public class ComplexNum {
         return new ComplexNum(this.a + num.a, this.b + num.b);
     }
 
-    public ComplexNum sub(ComplexNum num){
+    public ComplexNum sub(ComplexNum num) {
         int AnsR = this.a - num.a;
         int AnsI = this.b - num.b;
-        ComplexNum Sum = new ComplexNum(AnsR, AnsI);
-        return Sum;
+        return new ComplexNum(AnsR, AnsI);
     }
-    
+
 
     public ComplexNum mul(ComplexNum num) {
         int AnsI = (this.a * num.b) + (this.b * num.a);
@@ -45,6 +44,8 @@ public class ComplexNum {
 
     public static void main(String[] args) {
 
+        System.out.println();
+        sub()
     }
 }
 
