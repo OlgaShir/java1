@@ -21,11 +21,10 @@ public class ComplexNum {
     }
 
     public ComplexNum sub(ComplexNum num) {
-        int AnsR = this.a - num.a;
-        int AnsI = this.b - num.b;
-        return new ComplexNum(AnsR, AnsI);
+        a = this.a - num.a;
+        b = this.b - num.b;
+        return new ComplexNum(a, b);
     }
-
 
     public ComplexNum mul(ComplexNum num) {
         int AnsI = (this.a * num.b) + (this.b * num.a);
@@ -33,11 +32,10 @@ public class ComplexNum {
         ComplexNum Sum = new ComplexNum(AnsR, AnsI);
         return Sum;
     }
-    public ComplexNum div(ComplexNum num)
-    {
-        int AnsR1 = (this.a * num.a + this.b * num.b) / (num.a * num.a + num.b * num.b);
-        int AnsI1 = (this.b * num.a - this.a * num.b) / (num.a * num.a + num.b * num.b);
-        return new ComplexNum (AnsR1, AnsI1);
+    public ComplexNum div(ComplexNum num) {
+        int a = (this.a * num.a + this.b * num.b) / (num.a * num.a + num.b * num.b);
+        int b = (this.b * num.a - this.a * num.b) / (num.a * num.a + num.b * num.b);
+        return new ComplexNum (a, b);
     }
 
     public static void main(String[] args) {
