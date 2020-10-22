@@ -6,19 +6,19 @@ public class Eratosthenes {
     private boolean[] sieve;
 
     public Eratosthenes(int N) {
-        boolean sieve[] = new boolean[N];
+        sieve = new boolean[N];
         Arrays.fill(sieve, true);
-        
+        sift();
+    }
         private void sift() {
-            for (int i = 2; i <= N - 1; i++) {
+            for (int i = 2; i < sieve.length; i++) {
                 if (sieve[i]) {
-                    for (int j = 2 * i; j <= N; j += i) {
+                    for (int j = 2 * i; j < sieve.length; j += i) {
                         sieve[j] = false;
                     }
                 }
             }
         }
-    }
 
     public static void main(String[] args) {
     }
