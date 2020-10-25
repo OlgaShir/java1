@@ -32,6 +32,6 @@ public class Eratosthenes {
     }
     public static void main (String[]args){
         Eratosthenes N = new Eratosthenes(99);
-        System.out.println(N.isSimple(7));
+        System.out.println(N.isSimple(5));
     }
     }
