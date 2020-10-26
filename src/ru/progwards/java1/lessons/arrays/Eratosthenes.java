@@ -20,16 +20,8 @@ public class Eratosthenes {
             }
         }
         public boolean isSimple(int n){
-        if (n < 2){
-            return false;
-        }
-        for (int i = 2; i < sieve.length; i++){
-            if (n%i == 0) {
-                return false;
+            return sieve [n];
             }
-        }
-    return true;
-    }
     public static void main (String[]args){
         Eratosthenes N = new Eratosthenes(99);
         System.out.println(N.isSimple(2));
