@@ -41,7 +41,10 @@ public class DIntArray {
         return  massiv[pos];
     }
         public static void main(String[] args) {
-
+        DIntArray test = new DIntArray();
+        int[] massiv = {1, 3, 8, 7};
+        test.add(15);
+        System.out.println("Новый элемент массива добавлен - " + massiv.length == 5);
         }
     }
 
