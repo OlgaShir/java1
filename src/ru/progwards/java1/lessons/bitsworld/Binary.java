@@ -1,16 +1,18 @@
 package ru.progwards.java1.lessons.bitsworld;
 
 public class Binary {
+    byte num;
     public Binary(byte num) {
-        public String toString();
-            String s = "";
-            while (num > 0){
-                s = ((num % 2) == 0 ? "0" : "1") + s;
-                num = num / 2;
+        this.num = num;
+    }
+        public String toString(){
+            String result = "";
+            for (int i = 0; i < 8; i++){
+                result = (num & 0b1) + result;
+              num >>= 1;
             }
-            return s;
+            return result;
         }
-
     public static void main(String[] args){
 
     }
